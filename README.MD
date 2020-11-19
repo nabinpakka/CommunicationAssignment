@@ -1,5 +1,5 @@
-========================
 There are 5 source files and 1 index file
+==========================
 src/cloudsearch/_0CommunicationInterface.java is the abstract class of communication interface
 src/cloudsearch/_1SocketCommunication.java is an implementation of communication class (with Java Socket)
 src/cloudsearch/_2commonFn.java is a common utility, setting used by both client and server
