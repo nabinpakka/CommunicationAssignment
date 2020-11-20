@@ -10,7 +10,7 @@ There are 5 source files and 1 index file
 
 -src/cloudsearch/_4Client.java is a specific code for client
 
-index/Index.txt is the index file that server code will try to read
+-index/Index.txt is the index file that server code will try to read
 
 To compile without IDE,
 ========================
