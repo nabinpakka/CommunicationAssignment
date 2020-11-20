@@ -22,6 +22,8 @@ javac ./cloudsearch/_4Client.java
 
 To run without IDE,
 ====
+stay in src folder (not in cloudsearch folder)
+
 %% run server 
 
 java cloudsearch._3Server
