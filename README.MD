@@ -12,7 +12,7 @@ src/cloudsearch/_4Client.java is a specific code for client
 
 index/Index.txt is the index file that server code will try to read
 
-To compile without IDE,
+To compile without IDE
 ========================
 go to src folder (not in cloudsearch folder)
 
@@ -20,7 +20,7 @@ javac ./cloudsearch/_3Server.java
 
 javac ./cloudsearch/_4Client.java 
 
-To run without IDE,
+To run without IDE
 ====
 stay in src folder (not in cloudsearch folder)
 
@@ -32,17 +32,14 @@ java cloudsearch._3Server
 
 java cloudsearch._4Client
 
-Compilation NOTE:
+Compilation NOTE
 ====
-Delete all .class files in src/cloudsearch before recompile with modified source code. Otherwise, Java may use some of the original .class rather than creating a new modified one.
+1) Delete all .class files in src/cloudsearch before recompile with modified source code. Otherwise, Java may use some of the original .class rather than creating a new modified one.
 
-
-Warm Up Challenge
-====
-1) Currently, _2commonFn.java specify the socket address as localhost:1350. This only work if you run client and server on the same machine. Try to modify it and run client and server on different machines.
+2) Currently, _2commonFn.java specify the socket address as localhost:1350. This only work if you run client and server on the same machine. You need to change the IP address when running it on two computers.
 
 Assignment Hint
 ====
-2) To create a new communication scheme, create a new _1XXXCommunication.java and mimic the functionality of _1SocketCommunication.java (which implement abstract functions of _0CommunicationInterface.java) but switch from using socket to other communication scheme. Register your new _1XXXCommunication.java in _2commonFn.java's newCommunicator function. Try to limit the modification to other files. Some functions in _0CommunicationInterface can be left empty if it make sense to do so.
+To create a new communication scheme, create a new _1XXXCommunication.java and mimic the functionality of _1SocketCommunication.java (which implement abstract functions of _0CommunicationInterface.java). In the new file, develop the code to switch from using socket to another communication scheme. Register your new _1XXXCommunication.java in _2commonFn.java's newCommunicator function. Try to limit the modification to other files. Some functions required in _0CommunicationInterface can be left empty if it make sense to do so.
 
 
