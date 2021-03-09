@@ -43,6 +43,6 @@ Warm Up Challenges (Not in assignment instruction).
 
 Assignment Hint
 ====
-2) To create a new communication scheme, create a new _1XXXCommunication.java and mimic the functionality of _1SocketCommunication.java but switch from using socket to other communication scheme. Register your new _1XXXCommunication.java in _2commonFn.java's newCommunicator function. Try to limit the modification to other files. Some functions in _0CommunicationInterface can be left empty if it make sense to do so.
+2) To create a new communication scheme, create a new _1XXXCommunication.java and mimic the functionality of _1SocketCommunication.java (which implement abstract functions of _0CommunicationInterface.java) but switch from using socket to other communication scheme. Register your new _1XXXCommunication.java in _2commonFn.java's newCommunicator function. Try to limit the modification to other files. Some functions in _0CommunicationInterface can be left empty if it make sense to do so.
 
 
