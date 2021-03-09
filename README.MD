@@ -37,7 +37,7 @@ Compilation NOTE:
 Delete all .class files in src/cloudsearch before recompile with modified source code. Otherwise, Java may use some of the original .class rather than creating a new modified one.
 
 
-Warm Up Challenges (Not in assignment instruction).
+Warm Up Challenge
 ====
 1) Currently, _2commonFn.java specify the socket address as localhost:1350. This only work if you run client and server on the same machine. Try to modify it and run client and server on different machines.
 
