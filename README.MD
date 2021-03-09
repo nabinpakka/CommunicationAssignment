@@ -1,16 +1,16 @@
 There are 5 source files and 1 index file
 ==========================
--src/cloudsearch/_0CommunicationInterface.java is the abstract class of communication interface
+src/cloudsearch/_0CommunicationInterface.java is the abstract class of communication interface
 
--src/cloudsearch/_1SocketCommunication.java is an implementation of communication class (with Java Socket)
+src/cloudsearch/_1SocketCommunication.java is an implementation of communication class (with Java Socket)
 
--src/cloudsearch/_2commonFn.java is a common utility, setting used by both client and server
+src/cloudsearch/_2commonFn.java is a common utility, setting used by both client and server
 
--src/cloudsearch/_3Server.java is a specific code for server
+src/cloudsearch/_3Server.java is a specific code for server
 
--src/cloudsearch/_4Client.java is a specific code for client
+src/cloudsearch/_4Client.java is a specific code for client
 
--index/Index.txt is the index file that server code will try to read
+index/Index.txt is the index file that server code will try to read
 
 To compile without IDE,
 ========================
@@ -32,13 +32,17 @@ java cloudsearch._3Server
 
 java cloudsearch._4Client
 
-Things to do:
-=======================
-
-1) currently _2commonFn.java specify the address as localhost:1350. Modify it and try to run client and server on different machines.
-
-2) create new _1XXXCommunication.java and register it in _2commonFn.java's newCommunicator function. Try to limit the modification to other files. Some functions in _0CommunicationInterface can be left empty if it make sense to do so.
-
-NOTE:
+Compilation NOTE:
 ====
-delete all .class files in src/cloudsearch before recompile with modified source code. Otherwise, java may use some of the old .class rather than making the new modified one
+Delete all .class files in src/cloudsearch before recompile with modified source code. Otherwise, Java may use some of the original .class rather than creating a new modified one.
+
+
+Warm Up Challenges (Not in assignment instruction).
+====
+1) Currently, _2commonFn.java specify the socket address as localhost:1350. This only work if you run client and server on the same machine. Try to modify it and run client and server on different machines.
+
+Assignment Hint
+====
+2) To create a new communication scheme, create a new _1XXXCommunication.java and mimic the functionality of _1SocketCommunication.java but switch from using socket to other communication scheme. Register your new _1XXXCommunication.java in _2commonFn.java's newCommunicator function. Try to limit the modification to other files. Some functions in _0CommunicationInterface can be left empty if it make sense to do so.
+
+
